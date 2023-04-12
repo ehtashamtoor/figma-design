@@ -1,0 +1,34 @@
+.Box {
+    position: relative;
+}
+
+.Box:hover:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 8px solid orange;
+    z-index: 1;
+    border-radius: inherit;
+    box-sizing: border-box;
+    border: 4px solid transparent;
+    animation: border-fill 1.5s forwards;
+}
+
+@keyframes border-fill {
+    from {
+        border: 4px solid orange;
+        /* border-right-color: orange;
+        border-bottom-color: orange;
+        border-left-color: orange; */
+    }
+
+    to {
+        /* border-top-color: #ff7a3a;
+        border-right-color: #ff7a3a;
+        border-bottom-color: #ff7a3a; */
+        border: 4px solid #ff7a3a;
+    }
+}

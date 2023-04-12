@@ -1,13 +1,31 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&family=Inter&family=Roboto:wght@500&display=swap');
+
+
+
+:root {
+    --primary: #f1efee;
+    --secondary: #ff7a3a;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*::-webkit-scrollbar {
+    width: 6px;
 }
+
+*::-webkit-scrollbar-track {
+    background: var(--primary);
+    border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: 14px;
+    border: 2px solid var(--primary);
+}
+
+body {
+    font-family: Inter, sans-serif;
+}
+
+@tailwind components;
+@tailwind utilities;
