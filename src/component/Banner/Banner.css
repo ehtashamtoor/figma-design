@@ -2,6 +2,24 @@
     position: relative;
 }
 
+.Box {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    /* margin: auto; */
+    align-items: center;
+    margin: 1rem 0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .Box {
+        flex-direction: row;
+        /* margin: initial; */
+    }
+}
+
 .Box:hover:after {
     content: '';
     position: absolute;

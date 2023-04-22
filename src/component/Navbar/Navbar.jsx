@@ -30,10 +30,42 @@ const Navbar = () => {
                         </button>
 
                         <div className=' bg-[#ED712E] rounded'>
-                            <button className='bg-[#ED712E] rounded px-2' data-te-toggle="modal">
-                                <a className="md:p-4 py-2 block text-white" href="#" >Sign In</a>
+                            <button className='bg-[#ED712E] rounded px-2' data-te-toggle="modal" onClick={toggleModal}>
+                                <a className="md:p-4 py-2 block text-white" href="#">Sign In</a>
                             </button>
                         </div>
+                        {/* <div
+                            className="inline-block align-bottom bg-[#ED712E] rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+                            role="dialog"
+                            aria-modal="true"
+                            aria-labelledby="modal-headline"
+                        >
+                            <div>
+                                <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                                    <h3
+                                        className="text-lg leading-6 text-center text-white font-bold "
+                                        id="modal-headline"
+                                    >
+                                        Login Page
+                                    </h3>
+                                    <div className="mt-2">
+                                        <p className="text-md text-white">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, aut. Delectus assumenda eveniet ducimus beatae non quidem amet atque blanditiis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">
+                                <button
+                                    type="button"
+                                    className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-[#ffa3a] text-base font-medium text-white hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 sm:ml-3 sm:w-auto sm:text-sm"
+                                    onClick={toggleModal}
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div> */}
                     </div>
 
 
@@ -74,12 +106,12 @@ const Navbar = () => {
 
                     <div className='hidden md:block my-2 rounded'>
                         <button className='bg-[#ED712E] rounded px-2' onClick={toggleModal}>
-                            <a className="md:p-2 py-2 block  text-white font-medium" href="#" >Sign In</a>
+                            <a className="md:p-2 py-2 block text-white font-medium" href="#" >Sign In</a>
                         </button>
                     </div>
                     {isOpen && (
                         <div className="fixed z-20 inset-0 overflow-y-auto">
-                            <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                            <div className="flex items-end justify-center min-h-screen pt-1 px-1 pb-20 text-center sm:block sm:p-0">
                                 <div
                                     className="fixed inset-0 transition-opacity"
                                     aria-hidden="true"

@@ -3,7 +3,7 @@ import './Banner.css'
 
 let boxes = [
     {
-        title: <h2 className='font-semibold text-lg'>Free Ebooks</h2>,
+        title: <h5 className='font-semibold'>Free Ebooks</h5>,
         svg: <svg viewBox="0 0 191 144" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1_112)">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M131.237 44.1429L149.825 39.2719L139.21 56.4425L131.237 44.1429ZM134.994 45.4275L139.193 51.5714L144.872 42.649L134.994 45.4275Z" fill="#D7F0F7" />
@@ -168,8 +168,8 @@ let boxes = [
         </svg>
     },
     {
-        title: <h2 className='font-semibold text-lg'>24/7 Home<br />work help</h2>,
-        svg: <svg width="170" height="120" viewBox="0 0 192 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+        title: <h5 className='font-semibold'>24/7  Homework help</h5>,
+        svg: <svg viewBox="0 0 191 144" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1_282)">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M121.99 65.1091C121.99 65.1091 123.292 60.2787 123.292 58.7268C123.292 57.1748 121.967 55.2217 122.176 54.3382C122.386 53.4547 123.519 51.7341 124.257 51.7341C124.99 51.7341 128.855 52.0073 128.855 52.0073L132.883 58.4768C132.883 58.4768 130.198 60.4938 129.564 61.79C128.936 63.0921 128.646 66.2425 128.646 66.2425L121.99 65.1091Z" fill="white" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M80.0055 63.3711L76.9655 62.9293C76.9655 62.9293 76.3842 63.1386 75.4309 63.5396C71.8271 65.0626 62.9163 69.3814 60.0622 75.8857C56.4468 84.1165 49.646 97.1368 53.5114 104.903C57.371 112.674 66.4969 109.279 66.4969 109.279L66.1946 112.128L104.279 104.106L103.186 85.9649C103.186 85.9649 114.23 97.9739 121.241 95.2884C128.256 92.5971 129.913 70.5846 130.169 68.3583C130.419 66.1321 130.448 65.1788 130.448 65.1788L120.508 63.4699L116.015 79.4663C116.015 79.4663 104.215 64.2255 99.3442 62.9235C94.4732 61.6215 89.4859 61.6796 89.4859 61.6796L80.0055 63.3711Z" fill="#D7F0F7" />
@@ -291,8 +291,8 @@ let boxes = [
         </svg>
     },
     {
-        title: <h2 className='font-semibold text-lg'>24/7<br /> College<br /> conselling</h2>,
-        svg: <svg width="" viewBox="0 0 192 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+        title: <h5 className='font-semibold'>24/7 College conselling</h5>,
+        svg: <svg viewBox="0 0 191 144" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M109.987 75.4673C109.987 75.4673 117.294 79.2455 115.364 83.698C113.428 88.1505 82.8595 92.2659 76.4772 98.561C70.0949 104.862 82.3538 118.801 82.3538 118.801" stroke="#ED712E" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M95.9205 75.6765C95.9205 75.6765 103.733 80.3383 102.471 82.3088C101.21 84.2851 67.7814 89.4351 56.72 96.9392C45.6585 104.443 53.6974 120.225 53.6974 120.225" stroke="#ED712E" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
             <path fill-rule="evenodd" clip-rule="evenodd" d="M83.7663 20.4738L84.0162 74.5141H95.5195V63.8943H109.801V74.5141H149.606V46.7993L132.476 33.2791V44.5324L116.184 33.1977V44.5324L100.309 33.4476V45.7937H97.3679V20.4738H83.7663Z" fill="#D7F0F7" />
@@ -408,12 +408,12 @@ const Banner = () => {
                 <h1 className='text-4xl'>Awesome Team</h1>
             </div>
 
-            <div className='md:py-2 px-16 py-1 grid-cols-12 md:grid-cols-12 flex flex-wrap gap-1 justify-items-center mx-auto'>
+            <div className='flex gap-4 flex-wrap justify-center'>
                 {
                     boxes.map((box, id) => {
-                        return <div key={id} className='md:p-3 p-1 items-center rounded-md bg-white text-black flex gap-1 md:col-span-6 lg:col-span-3 col-span-8 my-2 mx-auto Box'>
+                        return <div key={id} className='bg-white w-[250px] Box'>
                             {box.title}
-                            <div className='w-[150px] h-full'>
+                            <div className='lg:w-[190px] md:w-[180px] w-[230px]'>
 
                                 {box.svg}
 
