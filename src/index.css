@@ -1,13 +1,6 @@
 @tailwind base;
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&family=Inter&family=Roboto:wght@500&display=swap');
 
-
-
-:root {
-    --primary: #f1efee;
-    --secondary: #ff7a3a;
-}
-
 *::-webkit-scrollbar {
     width: 6px;
 }
