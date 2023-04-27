@@ -4,7 +4,7 @@ let toolsData = [
     {
         title: "Expert Tutor",
         desc: "Get personalized help from subject matter experts",
-        svg: <svg viewBox="0 0 145 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+        svg: <svg width="218px" height="164px" viewBox="0 0 145 142" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M25.5593 120.742V109.617" stroke="#ED712E" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M0.839478 120.329V80.5493" stroke="#ED712E" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
             <path fill-rule="evenodd" clip-rule="evenodd" d="M137.674 100.709C137.674 100.709 140.064 112.373 138.553 120.642H69.5464C70.3786 118.984 72.9351 115.182 80.152 111.288C89.7723 106.095 106.796 104.557 106.796 104.557L137.674 100.709Z" fill="black" stroke="black" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -87,7 +87,7 @@ let toolsData = [
     {
         title: "Step by Step Explanations",
         desc: "We break it down for you",
-        svg: <svg viewBox="0 0 144 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+        svg: <svg width="218px" height="164px" viewBox="0 0 145 142" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M45.2325 80.9419C45.2325 80.9419 43.9809 96.4273 44.0807 108.544C44.1406 116.64 44.64 131.845 44.9595 141.059H85.3706C84.3321 123.736 81.8555 83.0324 81.4028 81.5145C80.8236 79.5904 45.2325 80.9419 45.2325 80.9419Z" fill="black" />
             <path d="M61.2238 95.4087L61.8963 136.772" stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
             <path fill-rule="evenodd" clip-rule="evenodd" d="M116.501 79.4307C116.501 79.4307 106.448 89.9362 105.004 100.708C103.559 111.48 111.355 117.059 111.355 117.059L128.571 113.404L130.016 83.9711L116.501 79.4307Z" fill="#ED712E" />
@@ -218,7 +218,7 @@ let toolsData = [
     {
         title: "Fast Answers",
         desc: "We'll get you unstuck in as few as 10 minutes",
-        svg: <svg viewBox="0 0 147 164" fill="none" xmlns="http://www.w3.org/2000/svg">
+        svg: <svg width="218px" height="164px" viewBox="0 0 145 142" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M75.8743 105.309C103.543 100.748 112.717 86.2617 112.717 86.2617C112.717 86.2617 70.6215 78.8452 47.6664 81.2619C24.7113 83.6786 13.6398 86.2617 13.6398 86.2617L0.5578 100.209C21.1029 109.017 48.2057 109.869 75.8743 105.309Z" fill="#D7F0F7" />
             <path fill-rule="evenodd" clip-rule="evenodd" d="M111.073 130.301C111.073 130.301 108.403 133.237 105.633 134.629C102.871 136.027 101.04 137.085 101.692 138.743C102.338 140.401 107.418 139.948 111.073 138.743C114.728 137.538 117.417 135.641 117.657 135.088C117.897 134.535 117.517 130.468 117.084 129.436C116.652 128.404 111.073 130.301 111.073 130.301Z" fill="white" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
             <path fill-rule="evenodd" clip-rule="evenodd" d="M137.09 120.248C137.09 120.248 137.929 124.842 137.783 127.751C137.643 130.661 137.017 133.117 139.087 133.836C141.151 134.555 144.107 131.506 145.359 126.047C146.61 120.588 145.965 116.161 145.938 115.894C145.911 115.635 142.643 114.476 142.376 114.43C142.117 114.383 137.09 120.248 137.09 120.248Z" fill="white" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -365,28 +365,28 @@ let toolsData = [
 
 const Section = () => {
     return (
-        <div className='lg:w-11/12 md:w-12/12 mx-auto lg:py-16 md:p-4 p-3'>
+        <div className='lg:w-11/12 md:w-12/12 mx-auto lg:py-16 py-10 md:p-4 p-3'>
             <div className='text-center'>
-                <h1 className='text-2xl font-bold'>24/7 Homework help</h1>
-                <p className='md:w-2/5 w-4/5 my-2 text-gray-500 text-sm mx-auto'>Explore some of our best tools & get 24/7 support for your assignments</p>
+                <h1 className='md:text-[38px] text-3xl font-bold'>24/7 Homework help</h1>
+                <p className='md:w-2/6 w-4/5 my-2 text-[#3B3A39] md:text-[19px] text-[13px] mx-auto opacity-70'>Explore some of our best tools & get 24/7 support for your assignments</p>
             </div>
 
-            <div className='flex flex-wrap lg:gap-10 md:gap-4 gap-2 mt-8 justify-center items-center'>
+            <div className='flex flex-wrap lg:gap-10 md:gap-4 gap-2 mt-8 justify-center items-start'>
                 {
                     toolsData.map(({ title, desc, svg }, id) => {
                         return <div key={id} className='flex flex-col gap-3 p-3 text-center overflow-hidden'>
-                            <div className='md:w-[180px] w-[250px] mx-auto hover:scale-110 transition-all duration-100'>
+                            <div className=' mx-auto hover:scale-110 transition-all duration-100'>
                                 {svg}
                             </div>
-                            <h1 className='font-bold text-[1.2rem]'>{title}</h1>
-                            <p className='w-4/6 mx-auto text-[12px]'>{desc}</p>
+                            <h1 className='font-bold text-[21px]'>{title}</h1>
+                            <p className='w-5/6 mx-auto text-[17px] opacity-70'>{desc}</p>
                         </div>
                     })
                 }
             </div>
 
             <div className='mx-auto w-fit my-3'>
-                <button className="text-1xl py-2 px-3 transition-all duration-100 border-[#ED712E] border-2 rounded-md text-[#ED712E] hover:text-white hover:bg-[#ED712E]">Get Homework Help</button>
+                <button className="text-[17px] py-2 px-5 transition-all duration-100 border-secondary border-2 rounded-md text-secondary hover:text-white hover:bg-secondary">Get Homework Help</button>
             </div>
         </div>
     )
